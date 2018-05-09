@@ -1,6 +1,11 @@
-import getProgram from "./program";
-import './commands/install';
+import program from "commander";
+import './commands';
+
+program
+  .action(function(env){
+     require("./runnpm");
+  });
 
 console.log(process.argv);
 
-getProgram().parse(process.argv);
+program.parse(process.argv);

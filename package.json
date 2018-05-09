@@ -1,6 +1,6 @@
 {
   "name": "mypm",
-  "version": "1.0.5",
+  "version": "1.0.10",
   "bin": {
     "mypm": "./bin/mypm.js"
   },
@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "commander": "2.15.1"
+    "commander": "2.15.1",
+    "npm": "6.0.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
