@@ -2,10 +2,9 @@ import program from "commander";
 import './commands';
 
 program
+  .version(require("../package.json").version, '-v, --version')
   .action(function(env){
      require("./runnpm");
-  });
-
-console.log(process.argv);
+  })
 
 program.parse(process.argv);
