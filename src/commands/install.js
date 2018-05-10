@@ -1,4 +1,5 @@
 import program from "commander";
+import runnpm from '../runnpm';
 
 program
 .command("install")
@@ -6,7 +7,9 @@ program
 .option('-g, --global', '')
 .description('execute the given remote cmd')
   .action(function(cmd, options){
-    require("../runnpm");
+    runnpm(()=>{
+      console.log("end");
+    });
   }).on('--help', function() {
     console.log('  Examples:');
     console.log();
